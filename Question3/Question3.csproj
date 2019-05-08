@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Interface\IGame.cs" />
+    <Compile Include="Interface\IGameExtended.cs" />
+    <Compile Include="Interface\IScoring.cs" />
+    <Compile Include="Interface\IMessages.cs" />
     <Compile Include="Score.xaml.cs">
       <DependentUpon>Score.xaml</DependentUpon>
     </Compile>
@@ -126,8 +130,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interface\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

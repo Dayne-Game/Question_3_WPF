@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using Question3.Interface;
 
 namespace Question3.Models
 {
-    class Game
+    class Game : IGame
     {
         public int Chosen_Number { get; set; } // This holds the Chosen Number
         public bool Chosen_Number_Guessed { get; set; } // Tells Whether the Chosen Number has been guessed by the user
